@@ -20,7 +20,7 @@ myApp.factory('adminCabService', ['$http', '$q', 'configService', 'userCabServic
         },
         resetAll: function () {
             return $q(function (resolve, reject) {
-                $http.delete('http://localhost:8080/orders/').then(function () {
+                $http.delete(configService.serviceBaseUrl + 'orders/').then(function () {
                     resolve();
                 }, function () {
                     reject();
