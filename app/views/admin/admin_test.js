@@ -1,18 +1,18 @@
 'use strict';
 
-describe('myApp.user module', function () {
+describe('myApp.admin module', function () {
 
     beforeEach(function(){
-        module('myApp.user');
+        module('myApp.admin');
     });
 
-    describe('user controller', function () {
+    describe('admin controller', function () {
 
         it('should ....', inject(function ($controller, $rootScope) {
             //spec body
             var scope = $rootScope.$new();
-            var userCabService = {
-                getAvailableCabs: function(){
+            var adminCabService = {
+                getAllCabs: function(){
                     return {
                         then: function(resolve, reject){
                             resolve([]);
@@ -24,12 +24,12 @@ describe('myApp.user module', function () {
               defaultLocation: [0, 0],
               serviceBaseUrl: 'http://example.com/'
             };
-            var userCtrl = $controller('UserCtrl', {
+            var adminCtrl = $controller('AdminCtrl', {
                 $scope: scope,
-                userCabService: userCabService,
-                configService: configService
+                configService: configService,
+                adminCabService: adminCabService
             });
-            expect(userCtrl).toBeDefined();
+            expect(adminCtrl).toBeDefined();
         }));
 
     });
