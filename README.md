@@ -9,3 +9,4 @@
 1. Admin page shows entire fleet of busy and available cabs
 1. Busy cab drivers have red colored labels and their passenger name is shown in blue below the car icon
 1. Carefully use the CLEAR! button to clear all orders and make all drivers available again
+1. CI powered by [travis](https://travis-ci.org/jugalthakkar/cabs-ui). master [![Build Status](https://travis-ci.org/jugalthakkar/cabs-ui.svg?branch=master)](https://travis-ci.org/jugalthakkar/cabs-ui)
